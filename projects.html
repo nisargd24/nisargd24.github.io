@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Aryan Sharma | MECH.DEV</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loader">
+  <svg class="loader-gear" width="80" height="80" viewBox="0 0 80 80" fill="none">
+    <path d="M40 20C29 20 20 29 20 40C20 51 29 60 40 60C51 60 60 51 60 40C60 29 51 20 40 20Z" stroke="#FF6B00" stroke-width="2"/>
+    <circle cx="40" cy="40" r="6" fill="#FF6B00"/>
+    <path d="M40 8V16M40 64V72M8 40H16M64 40H72M16.7 16.7L22.3 22.3M57.7 57.7L63.3 63.3M63.3 16.7L57.7 22.3M22.3 57.7L16.7 63.3" stroke="#FF6B00" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="40" cy="40" r="16" stroke="#FF6B00" stroke-width="1.5" stroke-dasharray="4 4"/>
+  </svg>
+  <div class="loader-text">Loading Projects...</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+</div>
+
+<div id="cursor-outer"></div>
+<div id="cursor-inner"></div>
+<div id="cursor-gear">
+  <svg viewBox="0 0 36 36" fill="none"><path d="M14 2h8l1 4.5a10 10 0 013.5 2l4.3-1.6 4 7-3.4 3a10 10 0 010 4.2l3.4 3-4 7-4.3-1.6a10 10 0 01-3.5 2L22 34h-8l-1-4.5a10 10 0 01-3.5-2L5.2 29l-4-7 3.4-3a10 10 0 010-4.2l-3.4-3 4-7 4.3 1.6A10 10 0 0113 4.5L14 2z" fill="#FF6B00"/><circle cx="18" cy="18" r="6" fill="#0A0A0C"/></svg>
+</div>
+<div id="scanline"></div>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <svg class="nav-logo-gear" viewBox="0 0 28 28" fill="none">
+      <path d="M10.5 1.5h7l.7 3.2a9 9 0 012.5 1.4l3.1-1.1 3.5 6-2.4 2.1a9 9 0 010 3l2.4 2.1-3.5 6-3.1-1.1a9 9 0 01-2.5 1.4l-.7 3.2h-7l-.7-3.2a9 9 0 01-2.5-1.4l-3.1 1.1-3.5-6 2.4-2.1a9 9 0 010-3L.7 12l3.5-6 3.1 1.1a9 9 0 012.5-1.4l.7-3.2z" fill="#FF6B00"/>
+      <circle cx="14" cy="14" r="4" fill="#0A0A0C"/>
+    </svg>
+    MECH.DEV
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="expertise.html">Expertise</a></li>
+    <li><a href="projects.html" class="active">Projects</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="nav-hamburger" id="menu-btn"><span></span><span></span><span></span></button>
+  <a href="contact.html" class="nav-contact-btn">Hire Me</a>
+</nav>
+
+<div id="mobile-menu" class="mobile-menu">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="expertise.html">Expertise</a>
+  <a href="projects.html">Projects</a><a href="experience.html">Experience</a><a href="contact.html">Contact</a>
+</div>
+
+<div class="page-hero">
+  <svg class="page-hero-bg" viewBox="0 0 400 400" fill="#FF6B00">
+    <path d="M155 0h90l8 40a160 160 0 0132 13l38-14 45 78-30 26a160 160 0 010 38l30 26-45 78-38-14a160 160 0 01-32 13l-8 40h-90l-8-40a160 160 0 01-32-13l-38 14-45-78 30-26a160 160 0 010-38L2 117l45-78 38 14A160 160 0 01147 40l8-40z"/>
+    <circle cx="200" cy="200" r="70" fill="#0A0A0C"/>
+  </svg>
+  <div>
+    <div class="page-hero-breadcrumb"><a href="index.html">Home</a> Projects</div>
+    <h1 class="page-hero-title">Project <span>Portfolio</span></h1>
+    <p class="page-hero-sub">CFD · CAD · FEA · Flutter — 30+ Projects Delivered</p>
+  </div>
+</div>
+
+<section style="background:var(--bg2);">
+  <div class="section-wrap">
+    <!-- FILTER -->
+    <div class="projects-filter fade-in">
+      <button class="filter-btn active" onclick="filterProjects('all', this)">All</button>
+      <button class="filter-btn" onclick="filterProjects('cfd', this)">CFD</button>
+      <button class="filter-btn" onclick="filterProjects('cad', this)">CAD</button>
+      <button class="filter-btn" onclick="filterProjects('cae', this)">CAE / FEA</button>
+      <button class="filter-btn" onclick="filterProjects('flutter', this)">Flutter</button>
+    </div>
+
+    <div class="projects-grid">
+      <!-- 1 CFD -->
+      <div class="project-card fade-in" data-cat="cfd">
+        <div class="project-visual">
+          <svg viewBox="0 0 320 200" fill="none"><rect width="320" height="200" fill="#0F0F12"/><path d="M40 160 Q80 60 120 100 Q160 140 200 80 Q240 20 280 60" stroke="#FF6B00" stroke-width="2" fill="none"/><path d="M40 160 Q80 60 120 100 Q160 140 200 80 Q240 20 280 60 L280 160 Z" fill="rgba(255,107,0,0.06)"/><path d="M60 160 Q90 90 120 110 Q150 130 180 90 Q210 50 240 70 Q270 90 280 60" stroke="rgba(255,140,51,0.4)" stroke-width="1" stroke-dasharray="4 4" fill="none"/><line x1="40" y1="40" x2="40" y2="170" stroke="rgba(255,107,0,0.2)" stroke-width="1"/><line x1="40" y1="170" x2="290" y2="170" stroke="rgba(255,107,0,0.2)" stroke-width="1"/><text x="50" y="185" fill="#FF6B00" font-size="9" font-family="Share Tech Mono">VELOCITY CONTOUR — AIRFOIL SECTION</text><text x="280" y="55" fill="#FF6B00" font-size="8" font-family="Share Tech Mono">324 m/s</text></svg>
+          <div class="project-badge">CFD</div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Turbine Blade Cooling CFD</h3>
+          <p class="project-desc">Conjugate heat transfer analysis on gas turbine blade with internal serpentine cooling channels. k-ε turbulence model, temperature gradients validated against published literature.</p>
+          <div class="project-tech"><span class="tech-pill">ANSYS Fluent</span><span class="tech-pill">k-ε Turbulence</span><span class="tech-pill">CHT</span><span class="tech-pill">Paraview</span></div>
+          <a href="#" class="project-link">View Case Study →</a>
+        </div>
+      </div>
+
+      <!-- 2 CAD -->
+      <div class="project-card fade-in" data-cat="cad">
+        <div class="project-visual">
+          <svg viewBox="0 0 320 200" fill="none"><rect width="320" height="200" fill="#0F0F12"/><g opacity="0.2" stroke="#FF6B00" stroke-width="0.5"><line x1="0" y1="40" x2="320" y2="40"/><line x1="0" y1="80" x2="320" y2="80"/><line x1="0" y1="120" x2="320" y2="120"/><line x1="0" y1="160" x2="320" y2="160"/><line x1="40" y1="0" x2="40" y2="200"/><line x1="80" y1="0" x2="80" y2="200"/><line x1="120" y1="0" x2="120" y2="200"/><line x1="160" y1="0" x2="160" y2="200"/><line x1="200" y1="0" x2="200" y2="200"/><line x1="240" y1="0" x2="240" y2="200"/><line x1="280" y1="0" x2="280" y2="200"/></g><rect x="80" y="50" width="160" height="100" rx="4" stroke="#FF6B00" stroke-width="1.5" fill="rgba(255,107,0,0.05)"/><rect x="110" y="80" width="40" height="40" rx="2" stroke="#FF6B00" stroke-width="1"/><circle cx="200" cy="100" r="25" stroke="#FF6B00" stroke-width="1.5" fill="rgba(255,107,0,0.05)"/><circle cx="200" cy="100" r="10" stroke="#FF6B00" stroke-width="1" stroke-dasharray="3 3"/><line x1="200" y1="75" x2="200" y2="50" stroke="#FF6B00" stroke-width="0.8" stroke-dasharray="2 2"/><line x1="225" y1="100" x2="260" y2="100" stroke="#FF6B00" stroke-width="0.8"/><text x="265" y="103" fill="#FF6B00" font-size="8" font-family="Share Tech Mono">Ø48</text></svg>
+          <div class="project-badge">CAD</div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Gearbox Assembly Design</h3>
+          <p class="project-desc">Complete 5-speed transmission gearbox designed in SOLIDWORKS — gear train calculations, housing design, full toleranced engineering drawings for CNC machining.</p>
+          <div class="project-tech"><span class="tech-pill">SOLIDWORKS</span><span class="tech-pill">GD&T</span><span class="tech-pill">Motion Study</span></div>
+          <a href="#" class="project-link">View Case Study →</a>
+        </div>
+      </div>
+
+      <!-- 3 CAE -->
+      <div class="project-card fade-in" data-cat="cae">
+        <div class="project-visual">
+          <svg viewBox="0 0 320 200" fill="none"><rect width="320" height="200" fill="#0F0F12"/><path d="M60 160L160 40L260 160Z" fill="url(#stressGrad)" stroke="#FF6B00" stroke-width="1.5"/><defs><linearGradient id="stressGrad" x1="160" y1="40" x2="160" y2="160" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FF2200" stop-opacity="0.8"/><stop offset="40%" stop-color="#FF6B00" stop-opacity="0.6"/><stop offset="100%" stop-color="#002288" stop-opacity="0.3"/></linearGradient></defs><path d="M60 160L110 100L160 160M110 100L160 40L210 100M160 40L210 100L260 160M110 100L160 160L210 100M160 160L210 100L260 160" stroke="#FF6B00" stroke-width="0.5" opacity="0.4"/><rect x="272" y="40" width="12" height="120" rx="2" fill="url(#colorbar2)"/><defs><linearGradient id="colorbar2" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox"><stop offset="0%" stop-color="#FF2200"/><stop offset="100%" stop-color="#002288"/></linearGradient></defs><text x="288" y="44" fill="#FF6B00" font-size="7" font-family="Share Tech Mono">MAX</text><text x="288" y="164" fill="#5588FF" font-size="7" font-family="Share Tech Mono">MIN</text><path d="M160 40L160 20" stroke="#FF6B00" stroke-width="2"/><text x="168" y="18" fill="#FF6B00" font-size="8" font-family="Share Tech Mono">F=5kN</text></svg>
+          <div class="project-badge">CAE / FEA</div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Structural Bracket FEA</h3>
+          <p class="project-desc">Von Mises stress analysis on an aerospace bracket under multi-axial loading. Safety factor optimization and topology optimization reducing mass by 32%.</p>
+          <div class="project-tech"><span class="tech-pill">ANSYS Mechanical</span><span class="tech-pill">Von Mises</span><span class="tech-pill">Topology Opt.</span></div>
+          <a href="#" class="project-link">View Case Study →</a>
+        </div>
+      </div>
+
+      <!-- 4 Flutter -->
+      <div class="project-card fade-in" data-cat="flutter">
+        <div class="project-visual">
+          <svg viewBox="0 0 320 200" fill="none"><rect width="320" height="200" fill="#0F0F12"/><rect x="110" y="10" width="100" height="180" rx="14" stroke="#FF6B00" stroke-width="1.5" fill="#1A1A20"/><rect x="118" y="18" width="84" height="148" rx="8" fill="#0F0F12"/><rect x="126" y="26" width="68" height="18" rx="4" fill="rgba(255,107,0,0.1)" stroke="#FF6B00" stroke-width="0.5"/><text x="160" y="38" fill="#FF6B00" font-size="7" font-family="Share Tech Mono" text-anchor="middle">MECH MONITOR</text><rect x="126" y="52" width="30" height="28" rx="3" fill="rgba(255,107,0,0.05)" stroke="#FF6B00" stroke-width="0.5"/><text x="141" y="62" fill="#FF6B00" font-size="6" font-family="Share Tech Mono" text-anchor="middle">TEMP</text><text x="141" y="74" fill="#FF6B00" font-size="9" font-family="Share Tech Mono" text-anchor="middle">284°</text><rect x="162" y="52" width="32" height="28" rx="3" fill="rgba(255,107,0,0.05)" stroke="#FF6B00" stroke-width="0.5"/><text x="178" y="62" fill="#FF6B00" font-size="6" font-family="Share Tech Mono" text-anchor="middle">RPM</text><text x="178" y="74" fill="#FF6B00" font-size="9" font-family="Share Tech Mono" text-anchor="middle">3200</text><polyline points="126,120 136,108 146,114 156,100 166,106 176,96 186,102 194,98" stroke="#FF6B00" stroke-width="1.5" fill="none"/><rect x="126" y="130" width="68" height="30" rx="3" fill="rgba(255,107,0,0.08)" stroke="#FF6B00" stroke-width="0.5"/></svg>
+          <div class="project-badge">Flutter</div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Industrial IoT Monitor App</h3>
+          <p class="project-desc">Real-time machine monitoring Flutter app — live sensor dashboards, alert management, Bluetooth connectivity, and offline data caching with BLoC architecture.</p>
+          <div class="project-tech"><span class="tech-pill">Flutter</span><span class="tech-pill">Dart</span><span class="tech-pill">MQTT</span><span class="tech-pill">BLoC</span></div>
+          <a href="#" class="project-link">View on GitHub →</a>
+        </div>
+      </div>
+
+      <!-- 5 CFD -->
+      <div class="project-card fade-in" data-cat="cfd">
+        <div class="project-visual">
+          <svg viewBox="0 0 320 200" fill="none"><rect width="320" height="200" fill="#0F0F12"/><rect x="40" y="60" width="240" height="80" rx="4" stroke="#FF6B00" stroke-width="1" fill="rgba(255,107,0,0.02)"/><circle cx="100" cy="100" r="20" stroke="#FF6B00" stroke-width="1.5" fill="rgba(255,50,0,0.15)"/><circle cx="100" cy="100" r="12" stroke="#FF6B00" stroke-width="1" stroke-dasharray="2 2"/><circle cx="160" cy="100" r="20" stroke="#FF6B00" stroke-width="1.5" fill="rgba(255,100,0,0.1)"/><circle cx="160" cy="100" r="12" stroke="#FF6B00" stroke-width="1" stroke-dasharray="2 2"/><circle cx="220" cy="100" r="20" stroke="#FF6B00" stroke-width="1.5" fill="rgba(255,150,0,0.08)"/><circle cx="220" cy="100" r="12" stroke="#FF6B00" stroke-width="1" stroke-dasharray="2 2"/><path d="M10 100L35 100" stroke="#FF6B00" stroke-width="2"/><path d="M285 100L310 100" stroke="#FF6B00" stroke-width="2"/><text x="6" y="90" fill="#FF6B00" font-size="7" font-family="Share Tech Mono">HOT IN</text><text x="290" y="90" fill="#5588FF" font-size="7" font-family="Share Tech Mono">COOL</text></svg>
+          <div class="project-badge">CFD</div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Shell & Tube Heat Exchanger CFD</h3>
+          <p class="project-desc">Conjugate heat transfer simulation for a shell-and-tube heat exchanger — NTU-effectiveness correlation validation with parametric baffle spacing study.</p>
+          <div class="project-tech"><span class="tech-pill">ANSYS Fluent</span><span class="tech-pill">CHT</span><span class="tech-pill">OpenFOAM</span></div>
+          <a href="#" class="project-link">View Case Study →</a>
+        </div>
+      </div>
+
+      <!-- 6 Flutter -->
+      <div class="project-card fade-in" data-cat="flutter">
+        <div class="project-visual">
+          <svg viewBox="0 0 320 200" fill="none"><rect width="320" height="200" fill="#0F0F12"/><rect x="100" y="15" width="120" height="170" rx="14" stroke="#FF6B00" stroke-width="1.5" fill="#1A1A20"/><rect x="108" y="23" width="104" height="154" rx="8" fill="#0F0F12"/><circle cx="160" cy="45" r="18" stroke="#FF6B00" stroke-width="1.5" stroke-dasharray="3 3" fill="none"/><circle cx="160" cy="45" r="12" stroke="#FF6B00" stroke-width="2" fill="rgba(255,107,0,0.1)"/><text x="160" y="49" fill="#FF6B00" font-size="8" font-family="Share Tech Mono" text-anchor="middle">78%</text><rect x="116" y="72" width="88" height="6" rx="3" fill="rgba(255,107,0,0.15)"/><rect x="116" y="72" width="70" height="6" rx="3" fill="#FF6B00"/><rect x="116" y="84" width="88" height="6" rx="3" fill="rgba(255,107,0,0.15)"/><rect x="116" y="84" width="50" height="6" rx="3" fill="#FF8C33"/><text x="160" y="108" fill="#FF6B00" font-size="8" font-family="Share Tech Mono" text-anchor="middle">CAD TRACKER PRO</text></svg>
+          <div class="project-badge">Flutter</div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Engineering Project Tracker</h3>
+          <p class="project-desc">Flutter app for tracking CAD/simulation project milestones, deadlines, client communications, and deliverable progress across multiple concurrent engineering projects.</p>
+          <div class="project-tech"><span class="tech-pill">Flutter</span><span class="tech-pill">Riverpod</span><span class="tech-pill">SQLite</span><span class="tech-pill">REST API</span></div>
+          <a href="#" class="project-link">View on GitHub →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <a href="index.html" class="footer-logo">MECH.DEV</a>
+  <div class="footer-text">© 2025 Aryan Sharma — CAD · CAE · CFD · Flutter</div>
+  <div class="footer-social"><a href="#" class="social-btn">in</a><a href="#" class="social-btn">gh</a><a href="#" class="social-btn">tw</a></div>
+</footer>
+<a href="#" id="scroll-top" title="Back to top">↑</a>
+<script src="main.js"></script>
+</body>
+</html>

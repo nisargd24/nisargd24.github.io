@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Aryan Sharma | MECH.DEV</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loader">
+  <svg class="loader-gear" width="80" height="80" viewBox="0 0 80 80" fill="none">
+    <path d="M40 20C29 20 20 29 20 40C20 51 29 60 40 60C51 60 60 51 60 40C60 29 51 20 40 20Z" stroke="#FF6B00" stroke-width="2"/>
+    <circle cx="40" cy="40" r="6" fill="#FF6B00"/>
+    <path d="M40 8V16M40 64V72M8 40H16M64 40H72M16.7 16.7L22.3 22.3M57.7 57.7L63.3 63.3M63.3 16.7L57.7 22.3M22.3 57.7L16.7 63.3" stroke="#FF6B00" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="40" cy="40" r="16" stroke="#FF6B00" stroke-width="1.5" stroke-dasharray="4 4"/>
+  </svg>
+  <div class="loader-text">Loading Profile...</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+</div>
+
+<div id="cursor-outer"></div>
+<div id="cursor-inner"></div>
+<div id="cursor-gear">
+  <svg viewBox="0 0 36 36" fill="none"><path d="M14 2h8l1 4.5a10 10 0 013.5 2l4.3-1.6 4 7-3.4 3a10 10 0 010 4.2l3.4 3-4 7-4.3-1.6a10 10 0 01-3.5 2L22 34h-8l-1-4.5a10 10 0 01-3.5-2L5.2 29l-4-7 3.4-3a10 10 0 010-4.2l-3.4-3 4-7 4.3 1.6A10 10 0 0113 4.5L14 2z" fill="#FF6B00"/><circle cx="18" cy="18" r="6" fill="#0A0A0C"/></svg>
+</div>
+<div id="scanline"></div>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <svg class="nav-logo-gear" viewBox="0 0 28 28" fill="none">
+      <path d="M10.5 1.5h7l.7 3.2a9 9 0 012.5 1.4l3.1-1.1 3.5 6-2.4 2.1a9 9 0 010 3l2.4 2.1-3.5 6-3.1-1.1a9 9 0 01-2.5 1.4l-.7 3.2h-7l-.7-3.2a9 9 0 01-2.5-1.4l-3.1 1.1-3.5-6 2.4-2.1a9 9 0 010-3L.7 12l3.5-6 3.1 1.1a9 9 0 012.5-1.4l.7-3.2z" fill="#FF6B00"/>
+      <circle cx="14" cy="14" r="4" fill="#0A0A0C"/>
+    </svg>
+    MECH.DEV
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="expertise.html">Expertise</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="nav-hamburger" id="menu-btn"><span></span><span></span><span></span></button>
+  <a href="contact.html" class="nav-contact-btn">Hire Me</a>
+</nav>
+
+<div id="mobile-menu" class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="expertise.html">Expertise</a>
+  <a href="projects.html">Projects</a>
+  <a href="experience.html">Experience</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <svg class="page-hero-bg" viewBox="0 0 400 400" fill="#FF6B00">
+    <path d="M155 0h90l8 40a160 160 0 0132 13l38-14 45 78-30 26a160 160 0 010 38l30 26-45 78-38-14a160 160 0 01-32 13l-8 40h-90l-8-40a160 160 0 01-32-13l-38 14-45-78 30-26a160 160 0 010-38L2 117l45-78 38 14A160 160 0 01147 40l8-40z"/>
+    <circle cx="200" cy="200" r="70" fill="#0A0A0C"/>
+  </svg>
+  <div>
+    <div class="page-hero-breadcrumb"><a href="index.html">Home</a> About</div>
+    <h1 class="page-hero-title">Engineering <span>Mind.</span><br>Developer Soul.</h1>
+    <p class="page-hero-sub">B.E. Mechanical · Indore, India · Open to Work</p>
+  </div>
+</div>
+
+<!-- ABOUT SECTION -->
+<section style="background:var(--bg2);">
+  <div class="section-wrap">
+    <div class="about-grid">
+      <div class="about-text fade-in">
+        <div class="section-tag">Who I Am</div>
+        <h2 class="section-title" style="margin-bottom:24px;">The <span>Story</span></h2>
+        <p>I'm a mechanical engineer with a deep passion for precision — whether it's crafting intricate CAD assemblies in SOLIDWORKS, running turbulent flow simulations in ANSYS Fluent, or architecting smooth, pixel-perfect mobile apps in Flutter.</p>
+        <p>My work sits at the intersection of physics and software. I believe that the best engineers aren't just domain experts — they're problem solvers who can cross disciplines to deliver complete solutions.</p>
+        <p>From aerospace component design to consumer-grade mobile applications, I bring the same rigor, methodology, and obsession with quality to every project. Based in Indore, MP — working with clients globally.</p>
+        <div class="about-specs">
+          <div class="spec-item">
+            <div class="spec-label">Location</div>
+            <div class="spec-val">Indore, MP, India</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Availability</div>
+            <div class="spec-val" style="color:#00cc66;">Open to Work</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Degree</div>
+            <div class="spec-val">Mechanical Eng.</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Languages</div>
+            <div class="spec-val">Hindi, English</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Experience</div>
+            <div class="spec-val">3+ Years</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Focus</div>
+            <div class="spec-val">CAD · CFD · Flutter</div>
+          </div>
+        </div>
+        <div style="margin-top:32px;display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="contact.html" class="btn-primary">Hire Me</a>
+          <a href="experience.html" class="btn-secondary">My Experience</a>
+        </div>
+      </div>
+
+      <div class="about-skills fade-in">
+        <div class="section-tag">Technical Skills</div>
+        <div class="skill-group">
+          <div class="skill-group-title">CAD & Modeling</div>
+          <div class="skill-bar-row">
+            <span class="skill-name">SOLIDWORKS</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:92%"></div></div>
+            <span class="skill-pct">92%</span>
+          </div>
+          <div class="skill-bar-row">
+            <span class="skill-name">AutoCAD</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div>
+            <span class="skill-pct">88%</span>
+          </div>
+          <div class="skill-bar-row">
+            <span class="skill-name">CATIA V5</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+            <span class="skill-pct">75%</span>
+          </div>
+          <div class="skill-bar-row">
+            <span class="skill-name">Fusion 360</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+            <span class="skill-pct">70%</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">CAE & CFD</div>
+          <div class="skill-bar-row">
+            <span class="skill-name">ANSYS Fluent</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+            <span class="skill-pct">85%</span>
+          </div>
+          <div class="skill-bar-row">
+            <span class="skill-name">ANSYS Mechanical</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div>
+            <span class="skill-pct">82%</span>
+          </div>
+          <div class="skill-bar-row">
+            <span class="skill-name">OpenFOAM</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+            <span class="skill-pct">70%</span>
+          </div>
+          <div class="skill-bar-row">
+            <span class="skill-name">Paraview</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+            <span class="skill-pct">80%</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Flutter & Programming</div>
+          <div class="skill-bar-row">
+            <span class="skill-name">Flutter / Dart</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+            <span class="skill-pct">90%</span>
+          </div>
+          <div class="skill-bar-row">
+            <span class="skill-name">Firebase</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+            <span class="skill-pct">80%</span>
+          </div>
+          <div class="skill-bar-row">
+            <span class="skill-name">Python</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:72%"></div></div>
+            <span class="skill-pct">72%</span>
+          </div>
+          <div class="skill-bar-row">
+            <span class="skill-name">MATLAB</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:68%"></div></div>
+            <span class="skill-pct">68%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES / PHILOSOPHY -->
+<section style="background:var(--bg);">
+  <div class="section-wrap">
+    <div class="section-header fade-in">
+      <div class="section-tag">Philosophy</div>
+      <h2 class="section-title">How I <span>Work</span></h2>
+      <div class="section-line"></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <div class="expertise-card fade-in">
+        <div class="corner-deco tl"></div><div class="corner-deco br"></div>
+        <div class="exp-num">I</div>
+        <h3 class="exp-title">Precision First</h3>
+        <p class="exp-desc">Every dimension, every mesh cell, every widget — matters. Engineering without precision is guesswork. I don't guess.</p>
+      </div>
+      <div class="expertise-card fade-in">
+        <div class="corner-deco tl"></div><div class="corner-deco br"></div>
+        <div class="exp-num">II</div>
+        <h3 class="exp-title">Cross-Discipline Thinking</h3>
+        <p class="exp-desc">The best solutions come from connecting domains that others treat as silos. Physics, code, and design inform each other.</p>
+      </div>
+      <div class="expertise-card fade-in">
+        <div class="corner-deco tl"></div><div class="corner-deco br"></div>
+        <div class="exp-num">III</div>
+        <h3 class="exp-title">Deliver, Don't Just Design</h3>
+        <p class="exp-desc">Simulations that inform decisions, models that can be manufactured, apps that are actually used — delivery is everything.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <a href="index.html" class="footer-logo">MECH.DEV</a>
+  <div class="footer-text">© 2025 Aryan Sharma — CAD · CAE · CFD · Flutter</div>
+  <div class="footer-social">
+    <a href="#" class="social-btn">in</a>
+    <a href="#" class="social-btn">gh</a>
+    <a href="#" class="social-btn">tw</a>
+  </div>
+</footer>
+
+<a href="#" id="scroll-top" title="Back to top">↑</a>
+<script src="main.js"></script>
+</body>
+</html>

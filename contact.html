@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Aryan Sharma | MECH.DEV</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .availability-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--font-mono); font-size: 11px; letter-spacing: 2px;
+    color: #00cc66; border: 1px solid rgba(0,204,102,0.3);
+    padding: 6px 14px; margin-bottom: 32px;
+    text-transform: uppercase;
+  }
+  .availability-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: #00cc66;
+    animation: pulse-green 1.5s infinite;
+  }
+  @keyframes pulse-green {
+    0%,100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.3); }
+  }
+  .faq-list { margin-top: 64px; }
+  .faq-item {
+    border-bottom: 1px solid var(--border);
+    padding: 24px 0;
+  }
+  .faq-q {
+    font-family: var(--font-display); font-size: 16px; font-weight: 600;
+    color: var(--text); margin-bottom: 10px; display: flex; gap: 12px;
+  }
+  .faq-q span { color: var(--orange); }
+  .faq-a { font-size: 15px; color: var(--text2); line-height: 1.8; }
+</style>
+</head>
+<body>
+
+<div id="loader">
+  <svg class="loader-gear" width="80" height="80" viewBox="0 0 80 80" fill="none">
+    <path d="M40 20C29 20 20 29 20 40C20 51 29 60 40 60C51 60 60 51 60 40C60 29 51 20 40 20Z" stroke="#FF6B00" stroke-width="2"/>
+    <circle cx="40" cy="40" r="6" fill="#FF6B00"/>
+    <path d="M40 8V16M40 64V72M8 40H16M64 40H72M16.7 16.7L22.3 22.3M57.7 57.7L63.3 63.3M63.3 16.7L57.7 22.3M22.3 57.7L16.7 63.3" stroke="#FF6B00" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="40" cy="40" r="16" stroke="#FF6B00" stroke-width="1.5" stroke-dasharray="4 4"/>
+  </svg>
+  <div class="loader-text">Opening Channel...</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+</div>
+
+<div id="cursor-outer"></div>
+<div id="cursor-inner"></div>
+<div id="cursor-gear">
+  <svg viewBox="0 0 36 36" fill="none"><path d="M14 2h8l1 4.5a10 10 0 013.5 2l4.3-1.6 4 7-3.4 3a10 10 0 010 4.2l3.4 3-4 7-4.3-1.6a10 10 0 01-3.5 2L22 34h-8l-1-4.5a10 10 0 01-3.5-2L5.2 29l-4-7 3.4-3a10 10 0 010-4.2l-3.4-3 4-7 4.3 1.6A10 10 0 0113 4.5L14 2z" fill="#FF6B00"/><circle cx="18" cy="18" r="6" fill="#0A0A0C"/></svg>
+</div>
+<div id="scanline"></div>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <svg class="nav-logo-gear" viewBox="0 0 28 28" fill="none">
+      <path d="M10.5 1.5h7l.7 3.2a9 9 0 012.5 1.4l3.1-1.1 3.5 6-2.4 2.1a9 9 0 010 3l2.4 2.1-3.5 6-3.1-1.1a9 9 0 01-2.5 1.4l-.7 3.2h-7l-.7-3.2a9 9 0 01-2.5-1.4l-3.1 1.1-3.5-6 2.4-2.1a9 9 0 010-3L.7 12l3.5-6 3.1 1.1a9 9 0 012.5-1.4l.7-3.2z" fill="#FF6B00"/>
+      <circle cx="14" cy="14" r="4" fill="#0A0A0C"/>
+    </svg>
+    MECH.DEV
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="expertise.html">Expertise</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <button class="nav-hamburger" id="menu-btn"><span></span><span></span><span></span></button>
+  <a href="contact.html" class="nav-contact-btn">Hire Me</a>
+</nav>
+
+<div id="mobile-menu" class="mobile-menu">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="expertise.html">Expertise</a>
+  <a href="projects.html">Projects</a><a href="experience.html">Experience</a><a href="contact.html">Contact</a>
+</div>
+
+<div class="page-hero">
+  <svg class="page-hero-bg" viewBox="0 0 400 400" fill="#FF6B00">
+    <path d="M155 0h90l8 40a160 160 0 0132 13l38-14 45 78-30 26a160 160 0 010 38l30 26-45 78-38-14a160 160 0 01-32 13l-8 40h-90l-8-40a160 160 0 01-32-13l-38 14-45-78 30-26a160 160 0 010-38L2 117l45-78 38 14A160 160 0 01147 40l8-40z"/>
+    <circle cx="200" cy="200" r="70" fill="#0A0A0C"/>
+  </svg>
+  <div>
+    <div class="page-hero-breadcrumb"><a href="index.html">Home</a> Contact</div>
+    <h1 class="page-hero-title">Let's Build<br><span>Something.</span></h1>
+    <p class="page-hero-sub">Available for Freelance · Remote Work · Consulting</p>
+  </div>
+</div>
+
+<section style="background:var(--bg2);">
+  <div class="section-wrap">
+    <div class="contact-grid">
+      <!-- LEFT -->
+      <div class="fade-in">
+        <div class="availability-badge">
+          <span class="availability-dot"></span>
+          Available for new projects
+        </div>
+
+        <div class="contact-info">
+          <h3>Open to Opportunities</h3>
+          <p>Whether it's a complex CFD simulation project, a CAD design challenge, or a Flutter application — I'm ready to deliver precision engineering and clean code. Typical response time: within 24 hours.</p>
+        </div>
+
+        <div class="contact-links">
+          <a href="mailto:aryan@example.com" class="contact-link">
+            <div class="contact-link-icon">✉</div>
+            <div>
+              <span class="contact-link-label">Email</span>
+              <span class="contact-link-val">aryan@example.com</span>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/aryan-sharma" target="_blank" rel="noopener" class="contact-link">
+            <div class="contact-link-icon">in</div>
+            <div>
+              <span class="contact-link-label">LinkedIn</span>
+              <span class="contact-link-val">linkedin.com/in/aryan-sharma</span>
+            </div>
+          </a>
+          <a href="https://github.com/aryan-sharma" target="_blank" rel="noopener" class="contact-link">
+            <div class="contact-link-icon">⌥</div>
+            <div>
+              <span class="contact-link-label">GitHub</span>
+              <span class="contact-link-val">github.com/aryan-sharma</span>
+            </div>
+          </a>
+          <a href="#" class="contact-link">
+            <div class="contact-link-icon">📍</div>
+            <div>
+              <span class="contact-link-label">Location</span>
+              <span class="contact-link-val">Indore, Madhya Pradesh, India</span>
+            </div>
+          </a>
+          <a href="#" class="contact-link">
+            <div class="contact-link-icon">⏱</div>
+            <div>
+              <span class="contact-link-label">Time Zone</span>
+              <span class="contact-link-val">IST (UTC +5:30)</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT — FORM -->
+      <div class="fade-in">
+        <div class="contact-form">
+          <div class="form-row">
+            <div class="form-field">
+              <label class="form-label">Name *</label>
+              <input type="text" name="name" class="form-input" placeholder="Your full name">
+            </div>
+            <div class="form-field">
+              <label class="form-label">Email *</label>
+              <input type="email" name="email" class="form-input" placeholder="your@email.com">
+            </div>
+          </div>
+          <div class="form-field">
+            <label class="form-label">Subject</label>
+            <input type="text" class="form-input" placeholder="CFD Project / CAD Design / Flutter App / Other">
+          </div>
+          <div class="form-field">
+            <label class="form-label">Budget Range</label>
+            <input type="text" class="form-input" placeholder="e.g. ₹20,000 – ₹50,000 or discuss">
+          </div>
+          <div class="form-field">
+            <label class="form-label">Message *</label>
+            <textarea name="message" class="form-textarea" placeholder="Describe your project, requirements, and timeline..."></textarea>
+          </div>
+          <button class="form-submit">Send Message →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="faq-list fade-in">
+      <div class="section-tag" style="margin-bottom:24px;">FAQ</div>
+      <div class="faq-item">
+        <div class="faq-q"><span>01</span> What types of CFD projects do you take on?</div>
+        <div class="faq-a">Internal/external flow, conjugate heat transfer, HVAC systems, automotive aerodynamics, turbomachinery, and multi-phase flows. I work with ANSYS Fluent and OpenFOAM. Each project includes mesh strategy report, solver setup, and post-processed results with a written technical report.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>02</span> Do you do full Flutter app development or just UI?</div>
+        <div class="faq-a">Full-stack Flutter — UI/UX design, state management (BLoC/Riverpod), Firebase backend, REST API integration, Bluetooth/IoT, and Play Store/App Store deployment. I don't do web-only Flutter or web backends.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>03</span> What's your typical project turnaround?</div>
+        <div class="faq-a">Small CAD models: 3–5 days. CFD simulations: 1–3 weeks depending on complexity. Flutter MVPs: 3–6 weeks. Full app development: 6–12 weeks. Timelines are always agreed upon before starting.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>04</span> Do you work with international clients?</div>
+        <div class="faq-a">Yes — I work remotely with clients globally. Communication via email, Slack, or video call. Payments via bank transfer or PayPal. No issues with time zone overlap for async work.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <a href="index.html" class="footer-logo">MECH.DEV</a>
+  <div class="footer-text">© 2025 Aryan Sharma — CAD · CAE · CFD · Flutter</div>
+  <div class="footer-social"><a href="#" class="social-btn">in</a><a href="#" class="social-btn">gh</a><a href="#" class="social-btn">tw</a></div>
+</footer>
+<a href="#" id="scroll-top" title="Back to top">↑</a>
+<script src="main.js"></script>
+</body>
+</html>
